@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
   background-color: var(--not-quite-black);
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;

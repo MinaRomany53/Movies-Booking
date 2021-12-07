@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login form</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FAV Icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./imgs/favicon-16x16.png"
+    />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!--Normailze helpful style sheet-->
+    <link rel="stylesheet" href="./css/Normalize.css" />
+    <!--Login CSS File-->
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!--Start Haeder-->
+    <header>
+      <!--Start Navbar-->
+      <nav>
+        <div class="container">
+          <a href="index.html" class="logo">Cinema Booking</a>
+          <button class="nav-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="navigation" class="nav-links visible">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="whatson.html">WHAT'S ON</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li><a href="signup.html" class="singup-btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--End Navbar-->
+    </header>
+
+    <!--Start Login Form-->
+    <div class="container vv">
+      <div class="form-container">
+        <h1>Please Login</h1>
+        <form action="">
+          <div class="form-control">
+            <input type="text" id="email" required />
+            <label for="email"> Email </label>
+          </div>
+
+          <div class="form-control">
+            <input type="password" id="password" required />
+            <label for="password"> Password </label>
+          </div>
+
+          <button class="btn">Login</button>
+          <p class="register-text">
+            Don't have an account?
+            <a href="signup.html" class="link">Register</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--End Login Form-->
+
+    <!--Main Script file-->
+    <script src="./js/main.js"></script>
+    <!--Login script file-->
+    <script src="./js/login.js"></script>
+  </body>
+</html>

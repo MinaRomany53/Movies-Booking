@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Movies Booking</title>
+    <title>Cinema Booking</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--FAV Icon-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./imgs/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./imgs/favicon-16x16.png"
+    />
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <!--Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
     />
     <!--Normailze helpful style sheet-->
     <link rel="stylesheet" href="./css/Normalize.css" />
@@ -20,23 +40,50 @@
   <body>
     <!--Start Haeder-->
     <header>
+      <!--Start Navbar-->
       <nav>
         <div class="container">
-          <div class="logo">
-            <a href="index.html"><img src="" alt="logo" /></a>
-          </div>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">Contact Us</a></li>
+          <a href="index.html" class="logo">Cinema Booking</a>
+          <button class="nav-icon">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul id="navigation" class="nav-links visible">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="whatson.html">WHAT'S ON</a></li>
+            <li><a href="#footer">CONTACT US</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+            <li><a href="signup.html" class="singup-btn">Sign Up</a></li>
           </ul>
-          <div class="btns">
-            <a href="login.html" class="login-btn">Login</a>
-            <a href="signup.html" class="singup-btn">Sign Up</a>
-          </div>
         </div>
       </nav>
+      <!--End Navbar-->
+
+      <!--Start Slider-->
+
+      <!--End Slider-->
     </header>
     <!--End Haeder-->
+
+    <!--Start Main-->
+    <main class="main">
+      <!--Srart WhatsOn Section-->
+      <h2 class="section-header">WHAT'S ON</h2>
+      <div class="container">
+        <div class="cards-container" id="cards-container"></div>
+      </div>
+      <!--End WhatsOn Section-->
+
+      <!--Start theaters view Section-->
+
+      <!--End theaters view Section-->
+    </main>
+    <!--End Main-->
+
+    <!--Start footer-->
+
+    <!--End footer-->
+
+    <!--Main Script file-->
+    <script src="./js/main.js"></script>
   </body>
 </html>

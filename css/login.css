@@ -1,0 +1,111 @@
+@import url(./main.css);
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+.form-container {
+  width: 380px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+@media (max-width: 787px) {
+  .form-container {
+    width: 340px;
+  }
+}
+@media (max-width: 400px) {
+  .form-container {
+    width: 300px;
+  }
+}
+h1 {
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  margin-top: 70px;
+  color: var(--off-white);
+}
+form {
+  font-family: "Muli", sans-serif;
+  padding: 40px 40px;
+}
+.form-control {
+  position: relative;
+  margin-bottom: 40px;
+}
+.form-control input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  caret-color: var(--primary-color);
+  font-size: 18px;
+  color: #fff;
+}
+@media (max-width: 787px) {
+  .form-control input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    caret-color: var(--primary-color);
+    font-size: 18px;
+    color: #fff;
+  }
+}
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: var(--primary-color);
+  outline: none;
+}
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: var(--primary-color);
+  transform: translateY(-30px);
+}
+.form-control label {
+  position: absolute;
+  font-size: 18px;
+  left: 0;
+  bottom: 15px;
+  color: var(--off-white);
+  z-index: -1;
+}
+
+/*Add spans using JS*/
+.form-control label span {
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+/*Add spans using JS*/
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.register-text {
+  margin-top: 30px;
+  color: var(--off-white);
+}
+.register-text .link {
+  color: var(--primary-color);
+  text-decoration: none;
+}

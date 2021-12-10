@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cinema Booking</title>
+    <title>What's ON</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,12 +34,12 @@
     />
     <!--Normailze helpful style sheet-->
     <link rel="stylesheet" href="./css/Normalize.css" />
-    <!--Main CSS File-->
-    <link rel="stylesheet" href="./css/main.css" />
+    <!--WhatsOn CSS File-->
+    <link rel="stylesheet" href="./css/whatson.css" />
   </head>
   <body>
     <!--Start Haeder-->
-    <header class="homepage-header">
+    <header class="header">
       <!--Start Navbar-->
       <nav>
         <div class="container">
@@ -60,55 +60,25 @@
         </div>
       </nav>
       <!--End Navbar-->
-
-      <!--Start Slider-->
-      <div class="  slider__container">
-        <div class="slider">
-          <div class="slide"><img src="./imgs/image-1.jpg" alt="" /></div>
-          <div class="slide"><img src="./imgs/image-2.jpg" alt="" /></div>
-          <div class="slide"><img src="./imgs/image-3.jpg" alt="" /></div>
-          <div class="slide"><img src="./imgs/image-4.jpg" alt="" /></div>
-          <button class="slider__btn slider__btn--left">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="slider__btn slider__btn--right">
-            <i class="fas fa-chevron-right"></i>
-          </button>
-        </div>
-      </div>
-      <!--End Slider-->
     </header>
     <!--End Haeder-->
 
     <!--Start Main-->
-    <main class="homepage-main">
-
-      <!--Start Bestmovies Section-->
-      <section class="BestMovies__section">
-        <h2 class="section-header">Movies</h2>
-        <div class="BestMovies__container">
-          
-        </div>
-      <section class="BestMovies__section">
-      </section>
-      <!--End Bestmovies Section-->
-
-      <!--Start theatersViewing Section-->
-
-      <!--End theatersViewing Section-->
-
+    <main class="whatson-main">
+      <!--Srart WhatsOn Section-->
+      <h2 class="section-header">WHAT'S ON</h2>
+      <div class="container">
+        <div class="cards-container" id="cards-container"></div>
+      </div>
+      <!--End WhatsOn Section-->
     </main>
     <!--End Main-->
-
-
-
-
 
     <!--Start footer-->
 
     <!--End footer-->
 
-    <!--Main Script file-->
-    <script src="./js/main.js"></script>
+    <!--getAPI Script file-->
+    <script src="./js/moviedbAPI.js"></script>
   </body>
 </html>

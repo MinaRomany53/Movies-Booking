@@ -1,4 +1,5 @@
 "use strict";
+const formControl = document.querySelector(".form-control");
 const labels = document.querySelectorAll(".form-control label");
 
 // Create span element for each word Function.

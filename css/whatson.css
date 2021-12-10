@@ -1,0 +1,92 @@
+@import url(./main.css);
+
+/*Start Main*/
+.whatson-main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.whatson-main .section-header {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 40px;
+  z-index: -1;
+}
+.whatson-main .section-header::after {
+  position: absolute;
+  content: " ";
+  width: 123px;
+  height: 3px;
+  background-color: var(--primary-color);
+  transform: translateX(-100%);
+  bottom: -10px;
+}
+.whatson-main .container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 7px;
+}
+.whatson-main .cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.whatson-main .cards-container .card {
+  width: 220px;
+
+  padding: 15px 5px;
+}
+.whatson-main .cards-container .card .movie-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.whatson-main .cards-container .card .movie-info {
+  margin-bottom: 20px;
+}
+.whatson-main .cards-container .card .movie-info h3 {
+  color: var(--off-white);
+  margin-bottom: 10px;
+}
+.whatson-main .cards-container .card .movie-info span {
+  display: block;
+  background-color: #262729;
+  font-size: 14px;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.whatson-main .cards-container .card .movie-info span.red {
+  color: red;
+}
+.whatson-main .cards-container .card .movie-info span.green {
+  color: lightgreen;
+}
+.whatson-main .cards-container .card .movie-info span.orange {
+  color: orange;
+}
+.whatson-main .cards-container .card .showtimes-btn {
+  font-family: inherit;
+  font-size: 14px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 2px 10px rgb(0 0 0, 0.05);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.showtimes-btn:focus {
+  outline: none;
+}
+.showtimes-btn:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  filter: brightness(0.9);
+}
+/*End Main*/

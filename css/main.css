@@ -1,5 +1,5 @@
 @import url(./global-rules.css);
-@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap"); /* For Logo Text Only*/
 
 :root {
   --primary-color: #5865f2;
@@ -8,10 +8,11 @@
   --not-quite-black: #23272a;
   --white: #fff;
 }
+
 /*Start navbar*/
-/* .header {
-  height: 85vh;
-} */
+.homepage-header {
+  height: 100vh;
+}
 header nav {
   height: 80px;
   padding: 30px 0;
@@ -117,6 +118,7 @@ nav .nav-links li a:hover {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    z-index: 9999;
   }
   nav .nav-links li a {
     display: inline-block;
@@ -125,6 +127,7 @@ nav .nav-links li a:hover {
   }
   .nav-icon {
     display: block;
+    z-index: 10000;
   }
   .visible {
     transform: translateX(100%);
@@ -140,7 +143,7 @@ nav .nav-links li a:hover {
 .slider {
   position: relative;
   max-width: 100%;
-  height: 70vh;
+  height: 85vh;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -155,21 +158,18 @@ nav .nav-links li a:hover {
 }
 .slide > img {
   width: 100%;
-  height: 70vh;
-  object-fit: cover;
+  height: 85vh;
+  object-fit: cover center;
 }
 .slider__btn {
   position: absolute;
   top: 50%;
   z-index: 10;
+  color: var(--white);
+  background-color: transparent;
   border: none;
-  background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
-  color: #333;
-  border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
-  font-size: 3.25rem;
+  font-size: 50px;
   cursor: pointer;
 }
 
@@ -184,94 +184,24 @@ nav .nav-links li a:hover {
 }
 /*End Slider*/
 
-/*Start Main*/
-.main {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.main .section-header {
+/*Start BestMovies-Section*/
+.BestMovies__section .section-header {
   position: relative;
   text-align: center;
   color: var(--white);
-  margin-bottom: 40px;
-  z-index: -1;
+  font-size: 40px;
+  padding-top: 80px;
 }
-.main .section-header::after {
+.BestMovies__section .section-header::after {
   position: absolute;
   content: " ";
-  width: 123px;
+  width: 130px;
   height: 3px;
   background-color: var(--primary-color);
   transform: translateX(-100%);
-  bottom: -10px;
+  bottom: -6px;
 }
-.main .container {
-  background-color: rgba(0, 0, 0, 0.2);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 7px;
+.BestMovies__section .BestMovies__container {
+  padding-top: 80px;
 }
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.cards-container .card {
-  width: 220px;
-
-  padding: 15px 5px;
-}
-.cards-container .card .movie-img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-.cards-container .card .movie-info {
-  margin-bottom: 20px;
-}
-.cards-container .card .movie-info h3 {
-  color: var(--off-white);
-  margin-bottom: 10px;
-}
-.cards-container .card .movie-info span {
-  display: block;
-  background-color: #262729;
-  font-size: 14px;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-}
-.cards-container .card .movie-info span.red {
-  color: red;
-}
-.cards-container .card .movie-info span.green {
-  color: lightgreen;
-}
-.cards-container .card .movie-info span.orange {
-  color: orange;
-}
-.cards-container .card .showtimes-btn {
-  font-family: inherit;
-  font-size: 14px;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: var(--primary-color);
-  color: var(--white);
-  box-shadow: 0 2px 10px rgb(0 0 0, 0.05);
-  transition: all 0.2s;
-  cursor: pointer;
-}
-.showtimes-btn:focus {
-  outline: none;
-}
-.showtimes-btn:hover {
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  filter: brightness(0.9);
-}
-
-/*End Main*/
+/*End BestMovies-Section*/

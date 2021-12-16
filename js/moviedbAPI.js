@@ -67,3 +67,6 @@ const showingMovies = function (movies) {
 };
 
 /* End Movies List form moviesDB Api*/
+
+const signature = document.querySelector(".signature");
+signature.innerHTML = `Developed by <span>❤</span> Mina`;

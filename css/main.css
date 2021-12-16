@@ -185,8 +185,9 @@ nav .nav-links li a:hover {
 /*End Slider*/
 
 /*Start BestMovies-Section*/
-/* .homepage-main {
-} */
+.homepage-main {
+  padding-bottom: 80px;
+}
 .BestMovies__section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -420,5 +421,8 @@ nav .nav-links li a:hover {
     width: 80%;
   }
 }
-
 /*End theatersViewing*/
+
+/*Start footer*/
+
+/*Start footer*/

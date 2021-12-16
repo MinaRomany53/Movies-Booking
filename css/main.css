@@ -185,12 +185,17 @@ nav .nav-links li a:hover {
 /*End Slider*/
 
 /*Start BestMovies-Section*/
+/* .homepage-main {
+} */
+.BestMovies__section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 .BestMovies__section .section-header {
   position: relative;
   text-align: center;
   color: var(--white);
   font-size: 40px;
-  padding-top: 80px;
 }
 .BestMovies__section .section-header::after {
   position: absolute;
@@ -201,7 +206,219 @@ nav .nav-links li a:hover {
   transform: translateX(-100%);
   bottom: -6px;
 }
-.BestMovies__section .BestMovies__container {
-  padding-top: 80px;
+.BestMovies__section .BestMovies__content {
+  padding-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 380px);
+  grid-template-areas:
+    "one one two three "
+    "one one four five "
+    "six seven ten ten "
+    "eight nine ten ten ";
+}
+
+.BestMovies__section .BestMovies__content .movie {
+  position: relative;
+  overflow: hidden;
+}
+.movie:nth-child(1) {
+  grid-area: one;
+}
+.movie:nth-child(2) {
+  grid-area: two;
+}
+.movie:nth-child(3) {
+  grid-area: three;
+}
+.movie:nth-child(4) {
+  grid-area: four;
+}
+.movie:nth-child(5) {
+  grid-area: five;
+}
+.movie:nth-child(6) {
+  grid-area: six;
+}
+.movie:nth-child(7) {
+  grid-area: seven;
+}
+.movie:nth-child(8) {
+  grid-area: eight;
+}
+.movie:nth-child(9) {
+  grid-area: nine;
+}
+.movie:nth-child(10) {
+  grid-area: ten;
+}
+.BestMovies__section .BestMovies__content .movie img {
+  width: fit-content;
+  width: 100%;
+  height: 100%;
+}
+.movie .overlay__content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: var(--off-white);
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+.movie .overlay__content h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.movie .overlay__content .rating {
+  width: 40px;
+  height: 40px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 3px solid var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.movie .overlay__content .overview {
+  line-height: 1.8;
+  padding-right: 30px;
+}
+.movie .overlay__content .overlay__btns {
+  margin-top: 30px;
+}
+.movie .overlay__content .overlay__btns .btn {
+  font-family: inherit;
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-color);
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 2px 10px rgb(0 0 0, 0.05);
+}
+.movie .overlay__content .overlay__btns .more-info__btn {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  margin-right: 10px;
+}
+.movie .overlay__content .overlay__btns .more-info__btn:hover {
+  background-color: var(--primary-color);
+}
+.movie .overlay__content .overlay__btns .book__btn:hover {
+  filter: brightness(1.2);
+}
+.BestMovies__content .movie:hover .overlay__content {
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .BestMovies__section .BestMovies__content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 550px);
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six"
+      "seven eight"
+      "nine ten";
+  }
+}
+@media (max-width: 676px) {
+  .BestMovies__section .BestMovies__content {
+    display: flex;
+    direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .BestMovies__section .BestMovies__content .movie {
+    width: 200px;
+  }
+  .BestMovies__section .BestMovies__content .movie:nth-child(10) {
+    display: none;
+  }
+  .movie .overlay__content .overview {
+    display: none;
+  }
+  .movie .overlay__content h3 {
+    font-size: 16px;
+  }
+}
+
+.BestMovies__section .view-all__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BestMovies__section .view-all__btn a {
+  font-family: inherit;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px 24px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: all 0.3s;
+}
+@media (max-width: 676px) {
+  .BestMovies__section .view-all__btn {
+    display: block;
+  }
+}
+.BestMovies__section .view-all__btn:hover {
+  filter: brightness(1.2);
 }
 /*End BestMovies-Section*/
+
+/*Start theatersViewing */
+.theaters {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.theaters .section-header {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  font-size: 40px;
+}
+.theaters .section-header::after {
+  position: absolute;
+  content: " ";
+  width: 240px;
+  height: 3px;
+  background-color: var(--primary-color);
+  transform: translateX(-100%);
+  bottom: -6px;
+}
+.theaters .theaters__content {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.theaters .theaters__content img {
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .theaters .theaters__content img {
+    padding: 20px;
+    width: 80%;
+  }
+}
+
+/*End theatersViewing*/

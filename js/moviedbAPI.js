@@ -34,7 +34,6 @@ async function getMovies(url) {
   const data = await res.json();
   console.log(data.results);
   showingMovies(data.results);
-  // addPosters(data.results);
 }
 
 const showingMovies = function (movies) {
@@ -66,7 +65,5 @@ const showingMovies = function (movies) {
     cardsContainer.insertAdjacentHTML("beforeend", cardHtml);
   });
 };
-
-const addPosters = function (movies) {};
 
 /* End Movies List form moviesDB Api*/

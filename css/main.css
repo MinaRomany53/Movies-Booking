@@ -182,6 +182,11 @@ nav .nav-links li a:hover {
   right: 6%;
   transform: translate(50%, -50%);
 }
+.slider__btn--left:focus,
+.slider__btn--right:focus {
+  outline: none;
+}
+
 /*End Slider*/
 
 /*Start BestMovies-Section*/

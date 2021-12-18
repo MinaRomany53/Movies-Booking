@@ -1,0 +1,95 @@
+@import url(./main.css);
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
+
+.vv {
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.form-container {
+  width: 380px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+@media (max-width: 787px) {
+  .form-container {
+    width: 340px;
+  }
+}
+@media (max-width: 400px) {
+  .form-container {
+    width: 300px;
+  }
+}
+h2 {
+  font-family: "Muli", sans-serif;
+  text-align: center;
+  color: var(--off-white);
+}
+form {
+  font-family: "Muli", sans-serif;
+  padding: 30px 40px;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__control label {
+  color: var(--off-white);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.form__control input {
+  background-color: transparent;
+  border: none;
+  border: 1px solid #444;
+  color: var(--white);
+  caret-color: var(--primary-color);
+  padding: 10px;
+}
+.form__control input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+.form__control input:active {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.form__control span {
+  color: var(--off-white);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.form__control .grow {
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.login-text {
+  margin-top: 30px;
+  color: var(--off-white);
+}
+.login-text .link {
+  color: var(--primary-color);
+  text-decoration: none;
+}

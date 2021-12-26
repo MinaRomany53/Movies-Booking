@@ -58,15 +58,6 @@ form {
   border: 1px solid var(--primary-color);
 }
 
-.form__control span {
-  color: var(--off-white);
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-.form__control .grow {
-  margin-top: 10px;
-}
-
 .btn {
   display: inline-block;
   width: 100%;

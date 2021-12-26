@@ -37,7 +37,7 @@
     <!--Main CSS File-->
     <link rel="stylesheet" href="./css/main.css" />
     <!--SignUp CSS File-->
-    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./css/successfully.css" />
   </head>
   <body>
     <!--Start Haeder-->
@@ -64,45 +64,16 @@
       <!--End Navbar-->
     </header>
 
-    <!--Start Login Form-->
-    <div class="container vv">
-      <div class="form-container">
-        <h2>Create Your Account</h2>
-        <form method="post" action="connect.php">
-          <div class="form__control">
-            <label for="fullName">Full Name</label>
-            <input type="text" id="fullName" name="fullname" required />
-          </div>
-          <div class="form__control">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form__control">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form__control">
-            <label for="username">UserName</label>
-            <input type="text" id="username" name="username" required />
-          </div>
-          <div class="form__control">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required />
-          </div>
-          <input
-            class="btn"
-            type="submit"
-            name="submit"
-            value="CREATE ACCOUNT"
-          />
-          <p class="login-text">
-            Already have an account?
-            <a href="login.html" class="link">Log In</a>
-          </p>
-        </form>
+    <main>
+      <div class="content">
+        <h3 class="sucss__message">
+          Your account Created Successfully <i class="far fa-thumbs-up"></i>
+        </h3>
+        <span class="sucss__link"
+          >Log In from <a href="login.html">here</a></span
+        >
       </div>
-    </div>
-    <!--End Login Form-->
+    </main>
 
     <!--Start footer-->
     <footer id="footer">

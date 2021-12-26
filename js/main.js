@@ -94,9 +94,9 @@ async function getMovies(url) {
 
 const showingMovies = function (movies) {
   bestMoviesContainer.innerHTML = "";
-  for (let i = 0; i < 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     let movieHtml = "";
-    if (i === 0 || i === 9) {
+    if (i === 1 || i === 10) {
       movieHtml = `            
       <div class="movie">
         <img src="${IMAGE_PATH + movies[i].poster_path}" alt="${

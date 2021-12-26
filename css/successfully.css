@@ -1,0 +1,29 @@
+@import url(./main.css);
+main {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sucss__message {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+.sucss__message i {
+  font-size: 25px;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+.sucss__link {
+  color: var(--white);
+}
+.sucss__link a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}

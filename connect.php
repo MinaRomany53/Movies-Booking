@@ -2,8 +2,8 @@
 $fullname=$_POST['fullname'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
-$username=$_POST['username'];
-$password=$_POST['password'];
+$userName=$_POST['username'];
+$Password=$_POST['password'];
 
 // Database Connection
 $servername = "localhost";
@@ -18,7 +18,7 @@ if (isset($_POST['submit']))
 //isset() will return false when checking a variable that has been assigned to null.
 {
 $sql="INSERT INTO  accounts (id,fullname,email,phone,username,password) VALUES 
-    (NULL,'$fullname','$email','$phone','$username','$password')";	
+    (NULL,'$fullname','$email','$phone','$userName','$Password')";	
 if ($con->query($sql) === TRUE) {
   echo "New record created successfully";
   header ("Location: successfully.html"); //redirect browser
